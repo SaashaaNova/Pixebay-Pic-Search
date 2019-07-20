@@ -1,11 +1,11 @@
 <h1 align="center">The Pixebay Search Component</h1>
 
 <p align="center">
-  <strong>Component made to search througt Pixebay's collection of pictures</strong></br>
+  <strong>A component made to search throughout Pixebay's collection of pictures</strong></br>
 </p>
 
 ## What is it?
-It's a simple component made with React. I made it to make my first steps into testing with Jest and Enzyme. 
+It's a simple component created with React. I made it to make my first steps into testing with Jest and Enzyme. 
 
 ## Demo
  <a href="https://saashaanova.github.io/Pixebay-Pic-Search/">Demo of Pixebay Search</a>
