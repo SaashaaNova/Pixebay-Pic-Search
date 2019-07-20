@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pixebay-Pic-Search/static/css/main.2cce8147.chunk.css",
+    "main.js": "/Pixebay-Pic-Search/static/js/main.2e7294e1.chunk.js",
+    "main.js.map": "/Pixebay-Pic-Search/static/js/main.2e7294e1.chunk.js.map",
+    "runtime~main.js": "/Pixebay-Pic-Search/static/js/runtime~main.3ed603f9.js",
+    "runtime~main.js.map": "/Pixebay-Pic-Search/static/js/runtime~main.3ed603f9.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/Pixebay-Pic-Search/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/Pixebay-Pic-Search/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/Pixebay-Pic-Search/index.html",
+    "precache-manifest.fc60b71a2fba9e851dde0090aeafbfe1.js": "/Pixebay-Pic-Search/precache-manifest.fc60b71a2fba9e851dde0090aeafbfe1.js",
+    "service-worker.js": "/Pixebay-Pic-Search/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/Pixebay-Pic-Search/static/css/main.2cce8147.chunk.css.map"
+  }
+}
