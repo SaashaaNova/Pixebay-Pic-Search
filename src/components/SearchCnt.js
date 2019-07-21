@@ -18,7 +18,7 @@ class SearchCnt extends React.Component {
   };
 
   render() {
-
+    console.log(this.state.imgs);
     return (
       <Search
         performSearch={this.performSearch}

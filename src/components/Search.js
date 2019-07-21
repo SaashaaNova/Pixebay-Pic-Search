@@ -22,18 +22,21 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='search-cnt'>
         <h1>The Pixabay Images Search</h1>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
-          />
-        </form>
-        <div>
-          <SearchResults imgs={this.props.imgs} />
-        </div>
+        <div className='search-form-cnt'>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              value={this.state.value}
+              onChange={this.handleChange}
+              placeholder="What kind of pic are you looking for ?"
+            />
+          </form>
+        </div> 
+        
+        <SearchResults imgs={this.props.imgs} />
+       
       </div>
     );
   }
