@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SearchResults = ({ imgs = [] }) => (
+const SearchResult = ({ imgs = [] }) => (
   <div className='search-result-cnt'>
     {imgs.map( picture => (
       <div key={picture.id}>
@@ -13,8 +13,8 @@ const SearchResults = ({ imgs = [] }) => (
   </div>
 );
 
-SearchResults.propTypes = {
+SearchResult.propTypes = {
     imgs: PropTypes.array
 };
 
-export default SearchResults;
+export default SearchResult;
