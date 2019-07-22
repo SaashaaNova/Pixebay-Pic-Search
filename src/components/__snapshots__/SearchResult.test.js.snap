@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResult component if empty array is returned 1`] = `ShallowWrapper {}`;
+
+exports[`SearchResult component renders 1`] = `ShallowWrapper {}`;
