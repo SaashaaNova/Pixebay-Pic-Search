@@ -4,28 +4,23 @@ import Search from "./Search";
 import fetchImgs from "../api/api";
 
 class SearchCnt extends React.Component {
-  state = {
-    imgs: []
-  };
+    state = {
+        imgs: []
+    };
 
-  performSearch = (event) => {
+    performSearch = event => {
+        return fetchImgs(event).then(data =>
+            this.setState({
+                imgs: data.hits
+            })
+        );
+    };
 
-      return fetchImgs(event).then(data =>
-      this.setState({ 
-        imgs: data.hits
-        })
-    );  
-  };
-
-  render() {
-    console.log(this.state.imgs);
-    return (
-      <Search
-        performSearch={this.performSearch}
-        imgs={this.state.imgs}
-      />
-    );
-  }
+    render() {
+        return (
+            <Search performSearch={this.performSearch} imgs={this.state.imgs} />
+        );
+    }
 }
 
 export default SearchCnt;

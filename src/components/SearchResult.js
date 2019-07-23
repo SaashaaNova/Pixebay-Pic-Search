@@ -20,3 +20,4 @@ SearchResult.propTypes = {
 };
 
 export default SearchResult;
+
