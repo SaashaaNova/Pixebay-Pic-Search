@@ -33,4 +33,14 @@ describe("Search component", () => {
       });
       expect(prevented).toBe(true);
     });
+
+    test("renders search results when the articles change", () => {
+      const wrapper = mount(<Search imgs={[]} />);
+  
+      wrapper.setProps({
+        imgs: [{id: 1, pageURL: "https://github.com/", webformatURL: "Github" }]
+      });
+  
+      expect(wrapper.find("a").prop("href")).toEqual("https://github.com/");
+    });
   });

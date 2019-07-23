@@ -15,7 +15,7 @@ const mockPics = [
 
   describe("SearchResult component", () => {
     test("renders", () => {
-      const wrapper = shallow(<SearchResult articles={mockPics} />);
+      const wrapper = shallow(<SearchResult imgs={mockPics} />);
   
       expect(wrapper).toMatchSnapshot();
     });
@@ -33,7 +33,7 @@ const mockPics = [
     });
 
     test("runs when array is empty", () => {
-      const wrapper = shallow(<SearchResult articles={[]} />);
+      const wrapper = shallow(<SearchResult imgs={[]} />);
   
       expect(wrapper.find("li")).toHaveLength(0);
     });
