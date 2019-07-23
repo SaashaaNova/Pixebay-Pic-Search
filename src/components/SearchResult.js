@@ -1,24 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SearchResults = ({ imgs = [] }) => (
-    <div className="search-result-cnt">
-        {imgs.map(picture => (
-            <div key={picture.id}>
-                <a
-                    href={picture.pageURL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={picture.webformatURL} alt="" />
-                </a>
-            </div>
-        ))}
-    </div>
+const SearchResult = ({ imgs = [] }) => (
+  <div className='search-result-cnt'>
+    <ul>
+      {imgs.map( picture => (
+        <li key={picture.id}>
+          <a href={picture.pageURL} target="_blank" rel="noopener noreferrer">
+            <img src={picture.webformatURL} alt=""/>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div> 
 );
 
-SearchResults.propTypes = {
+SearchResult.propTypes = {
     imgs: PropTypes.array
 };
 
-export default SearchResults;
+export default SearchResult;
+
