@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Pixebay-Pic-Search/precache-manifest.cbf91665bd6543ade93801266d4b85fc.js"
+  "/Pixebay-Pic-Search/precache-manifest.f5f3f85b3414d401fb1109b78a93e3f3.js"
 );
 
 self.addEventListener('message', (event) => {
