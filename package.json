@@ -4,7 +4,10 @@
   "private": true,
   "homepage": "https://SaashaaNova.github.io/Pixebay-Pic-Search",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -12,11 +15,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --verbose",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "jest --verbose"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
