@@ -8,19 +8,23 @@ class SearchCnt extends React.Component {
         imgs: []
     };
 
-    performSearch = event => {
-        return fetchImgs(event).then(data =>
-            this.setState({
-                imgs: data.hits
-            })
-        );
-    };
+  performSearch = (event) => {
+      return fetchImgs(event).then(data =>
+      this.setState({ 
+        imgs: data.hits
+        })
+    );  
+  };
 
-    render() {
-        return (
-            <Search performSearch={this.performSearch} imgs={this.state.imgs} />
-        );
-    }
-}
+  render() {
+    console.log(this.state.imgs);
+    return (
+      <Search
+        performSearch={this.performSearch}
+        imgs={this.state.imgs}
+      />
+    );
+  }
+
 
 export default SearchCnt;
