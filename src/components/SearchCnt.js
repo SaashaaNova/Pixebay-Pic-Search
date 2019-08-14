@@ -4,9 +4,9 @@ import Search from "./Search";
 import fetchImgs from "../api/api";
 
 class SearchCnt extends React.Component {
-  state = {
-    imgs: []
-  };
+    state = {
+        imgs: []
+    };
 
   performSearch = (event) => {
       return fetchImgs(event).then(data =>
@@ -25,6 +25,6 @@ class SearchCnt extends React.Component {
       />
     );
   }
-}
+
 
 export default SearchCnt;
