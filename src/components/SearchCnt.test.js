@@ -6,6 +6,8 @@ import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
+jest.mock('../api');
+
 describe("Search Cnt", () => {
 
     test("if render SearchCnt", () => {
@@ -14,9 +16,15 @@ describe("Search Cnt", () => {
       expect(wrapper.exists()).toBe(true);
     });
     
-    test("if render Search component", () => {
+    test("if update imgs state", () => {
         const wrapper = mount(<SearchCnt />);
     
-        expect(wrapper.children(Search).length).toEqual(1);
+        expect(wrapper.state().imgs).toEqual([]);
+
+        const {performSearch} = wrapper.find(Search).props();
+
+        return performSearch().then(() => {
+          expect(wrapper.state().imgs).toHaveLength(20)
+        })
       }); 
 });

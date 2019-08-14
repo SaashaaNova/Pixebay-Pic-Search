@@ -9,7 +9,6 @@ class SearchCnt extends React.Component {
   };
 
   performSearch = (event) => {
-
       return fetchImgs(event).then(data =>
       this.setState({ 
         imgs: data.hits
